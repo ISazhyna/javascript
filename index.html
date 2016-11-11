@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script  src="/domexample.js "  ></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+
+        function count_rabbits() {
+
+            for(var i=1; i<=3; i++) {
+
+                alert("Из шляпы достали "+i+" кролика!")
+            }
+
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+<input type="button" onmouseover="count_rabbits()" value="Считать кролей!"/>
+<input id="myElement" type="button" value="Нажми меня"/>
+<script> document.getElementById('myElement').onclick = function() {
+    alert('Спасибо')};
+</script>
+<input
+
+        type="button"
+
+        value="Показать"
+
+        onclick="setupMessageButton('Привет!', 'Ваше сообщение')"
+
+/>
+
+</body>
+</html>
